@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200993A1284921C300A69DD9 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200993A0284921C300A69DD9 /* GooglePlacesManager.swift */; };
+		200993A32849560E00A69DD9 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200993A22849560E00A69DD9 /* ApiKey.swift */; };
 		20C52E3A2847CF79007C3D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52E392847CF79007C3D10 /* AppDelegate.swift */; };
 		20C52E3C2847CF79007C3D10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52E3B2847CF79007C3D10 /* SceneDelegate.swift */; };
 		20C52E3E2847CF79007C3D10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52E3D2847CF79007C3D10 /* ViewController.swift */; };
 		20C52E412847CF79007C3D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C52E3F2847CF79007C3D10 /* Main.storyboard */; };
 		20C52E432847CF7B007C3D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C52E422847CF7B007C3D10 /* Assets.xcassets */; };
 		20C52E462847CF7B007C3D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C52E442847CF7B007C3D10 /* LaunchScreen.storyboard */; };
+		20C52E4E2847D0AB007C3D10 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52E4D2847D0AB007C3D10 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13DBB1442CF94117DBE488E8 /* Pods-NearPlacesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearPlacesApp.debug.xcconfig"; path = "Target Support Files/Pods-NearPlacesApp/Pods-NearPlacesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		200993A0284921C300A69DD9 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
+		200993A22849560E00A69DD9 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		20C52E362847CF79007C3D10 /* NearPlacesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearPlacesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C52E392847CF79007C3D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C52E3B2847CF79007C3D10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		20C52E422847CF7B007C3D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C52E452847CF7B007C3D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20C52E472847CF7B007C3D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C52E4D2847D0AB007C3D10 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DBC7DCB99A3592A5E321EE0F /* Pods-NearPlacesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearPlacesApp.release.xcconfig"; path = "Target Support Files/Pods-NearPlacesApp/Pods-NearPlacesApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,8 @@
 			children = (
 				20C52E382847CF79007C3D10 /* NearPlacesApp */,
 				20C52E372847CF79007C3D10 /* Products */,
+				BE06328C14B2955B7929BED0 /* Pods */,
+				C00FD64650F23DE48537FCD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +73,27 @@
 				20C52E422847CF7B007C3D10 /* Assets.xcassets */,
 				20C52E442847CF7B007C3D10 /* LaunchScreen.storyboard */,
 				20C52E472847CF7B007C3D10 /* Info.plist */,
+				20C52E4D2847D0AB007C3D10 /* ResultViewController.swift */,
+				200993A0284921C300A69DD9 /* GooglePlacesManager.swift */,
+				200993A22849560E00A69DD9 /* ApiKey.swift */,
 			);
 			path = NearPlacesApp;
+			sourceTree = "<group>";
+		};
+		BE06328C14B2955B7929BED0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13DBB1442CF94117DBE488E8 /* Pods-NearPlacesApp.debug.xcconfig */,
+				DBC7DCB99A3592A5E321EE0F /* Pods-NearPlacesApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C00FD64650F23DE48537FCD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20C52E4A2847CF7B007C3D10 /* Build configuration list for PBXNativeTarget "NearPlacesApp" */;
 			buildPhases = (
+				5F4DC1EE9C7F9100B0CF28DF /* [CP] Check Pods Manifest.lock */,
 				20C52E322847CF79007C3D10 /* Sources */,
 				20C52E332847CF79007C3D10 /* Frameworks */,
 				20C52E342847CF79007C3D10 /* Resources */,
+				A67B1C9D6B18F990F9147FC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -103,7 +134,7 @@
 				};
 			};
 			buildConfigurationList = 20C52E312847CF79007C3D10 /* Build configuration list for PBXProject "NearPlacesApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,6 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F4DC1EE9C7F9100B0CF28DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearPlacesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A67B1C9D6B18F990F9147FC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearPlacesApp/Pods-NearPlacesApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearPlacesApp/Pods-NearPlacesApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearPlacesApp/Pods-NearPlacesApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20C52E322847CF79007C3D10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +214,9 @@
 				20C52E3E2847CF79007C3D10 /* ViewController.swift in Sources */,
 				20C52E3A2847CF79007C3D10 /* AppDelegate.swift in Sources */,
 				20C52E3C2847CF79007C3D10 /* SceneDelegate.swift in Sources */,
+				20C52E4E2847D0AB007C3D10 /* ResultViewController.swift in Sources */,
+				200993A32849560E00A69DD9 /* ApiKey.swift in Sources */,
+				200993A1284921C300A69DD9 /* GooglePlacesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +358,7 @@
 		};
 		20C52E4B2847CF7B007C3D10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DBB1442CF94117DBE488E8 /* Pods-NearPlacesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +387,7 @@
 		};
 		20C52E4C2847CF7B007C3D10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC7DCB99A3592A5E321EE0F /* Pods-NearPlacesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

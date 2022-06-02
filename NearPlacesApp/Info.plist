@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationUsageDescription</key>
+	<string>Konum İzni Ver</string>
 </dict>
 </plist>
