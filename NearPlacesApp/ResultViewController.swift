@@ -15,14 +15,14 @@ protocol ResultViewControllerDelegate : AnyObject {
 class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     weak var delegate : ResultViewControllerDelegate?
+    private var places:[Place]=[]
+    
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self,
                     forCellReuseIdentifier: "cell")
         return table
     }()
-    
-    private var places:[Place]=[]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel?.text = places[indexPath.row].name
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
@@ -65,6 +66,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section:Int) -> Int {
         return places.count
     }

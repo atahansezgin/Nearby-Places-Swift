@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		200993A1284921C300A69DD9 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200993A0284921C300A69DD9 /* GooglePlacesManager.swift */; };
 		200993A32849560E00A69DD9 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200993A22849560E00A69DD9 /* ApiKey.swift */; };
+		200993A7284960BF00A69DD9 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200993A6284960BF00A69DD9 /* Place.swift */; };
+		200993A9284960FE00A69DD9 /* PlacesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200993A8284960FE00A69DD9 /* PlacesError.swift */; };
 		20C52E3A2847CF79007C3D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52E392847CF79007C3D10 /* AppDelegate.swift */; };
 		20C52E3C2847CF79007C3D10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52E3B2847CF79007C3D10 /* SceneDelegate.swift */; };
 		20C52E3E2847CF79007C3D10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52E3D2847CF79007C3D10 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 		13DBB1442CF94117DBE488E8 /* Pods-NearPlacesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearPlacesApp.debug.xcconfig"; path = "Target Support Files/Pods-NearPlacesApp/Pods-NearPlacesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		200993A0284921C300A69DD9 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
 		200993A22849560E00A69DD9 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		200993A6284960BF00A69DD9 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		200993A8284960FE00A69DD9 /* PlacesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesError.swift; sourceTree = "<group>"; };
 		20C52E362847CF79007C3D10 /* NearPlacesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearPlacesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C52E392847CF79007C3D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C52E3B2847CF79007C3D10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200993A4284960A500A69DD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				200993A6284960BF00A69DD9 /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		200993A5284960AE00A69DD9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				200993A8284960FE00A69DD9 /* PlacesError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		20C52E2D2847CF79007C3D10 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +86,8 @@
 		20C52E382847CF79007C3D10 /* NearPlacesApp */ = {
 			isa = PBXGroup;
 			children = (
+				200993A5284960AE00A69DD9 /* Enums */,
+				200993A4284960A500A69DD9 /* Models */,
 				20C52E392847CF79007C3D10 /* AppDelegate.swift */,
 				20C52E3B2847CF79007C3D10 /* SceneDelegate.swift */,
 				20C52E3D2847CF79007C3D10 /* ViewController.swift */,
@@ -216,6 +238,8 @@
 				20C52E3C2847CF79007C3D10 /* SceneDelegate.swift in Sources */,
 				20C52E4E2847D0AB007C3D10 /* ResultViewController.swift in Sources */,
 				200993A32849560E00A69DD9 /* ApiKey.swift in Sources */,
+				200993A7284960BF00A69DD9 /* Place.swift in Sources */,
+				200993A9284960FE00A69DD9 /* PlacesError.swift in Sources */,
 				200993A1284921C300A69DD9 /* GooglePlacesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

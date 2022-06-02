@@ -9,25 +9,12 @@ import Foundation
 import GooglePlaces
 import CoreLocation
 
-struct Place {
-    let name:String
-    let identifier:String
-}
-
 final class GooglePlacesManager {
-    static let shared = GooglePlacesManager()
-    
-    private let client = GMSPlacesClient.shared()
     private init() {}
-    enum PlacesError:Error{
-        case failedToFind
-        case failedToGetCoordinate
-    }
+    static let shared = GooglePlacesManager()
+    private let client = GMSPlacesClient.shared()
     
-    public func findPlaces(
-        query: String,
-        completion : @escaping (Result<[Place],Error>)->Void
-    ){
+    public func findPlaces(query: String,completion : @escaping (Result<[Place],Error>)->Void){
         let filter = GMSAutocompleteFilter()
         filter.type = .geocode
         client.findAutocompletePredictions(
